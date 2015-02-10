@@ -53,6 +53,8 @@ def ice_core_plot_simple(ice_age_deut, deut, deltaTS,ice_age_o18,o18,ice_age_CO2
     # We are going to use subplots here.  We are going to specify the axes used
     # in each.  This will give us a bit more flexibility later on
     
+    #Leo: this is my attempt to write a script for analysis of data on ice cores
+    
     ax1 = plt.subplot2grid((6,4),(0,0),colspan=4)
     ax1.plot(ice_age_deut/1000,deltaTS,'-',color="blue",linewidth=1)
     ax1.set_ylabel(u'$\Delta TS  (^{o}C)$',fontsize=10) # Note that the text held between the $ signs gets converted to "math" format
